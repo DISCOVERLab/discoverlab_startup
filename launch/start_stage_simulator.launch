@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="stage_ros" type="stageros" args="$(find discoverlab_startup)/worlds/one_robot.world" name="stage_world" />
+</launch>

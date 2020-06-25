@@ -1,15 +1,14 @@
 resolution 0.02 # set the resolution of the underlying raytrace model in meters
-#interval_sim 50 # simulation timestep in milliseconds
 interval_sim 15 # simulation timestep in milliseconds
-#interval_real 100
 
 speedup 0.3   # playback speed
 
 window
 ( 
   size [ 800.000 600.000 ] 
-#scale 28.806 
   scale 80
+
+  show_data 1
 )
 
 define map model
@@ -77,7 +76,7 @@ define diff_robot position
   gui_nose 1
   drive "diff"
   wheelbase 0.25
-  topurg(pose [ 0.0 0.000 0 0.000 ])
+  hokuyo(pose [ 0.0 0.000 0 0.000 ])
   bitmap "robot.png"
   
 )
